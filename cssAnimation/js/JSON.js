@@ -76,6 +76,8 @@ const user ={
 
 //=====================Global And local  Scopes ====================
 
-
+function name(params) {
+    
+}
 
 
