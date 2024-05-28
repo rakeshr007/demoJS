@@ -83,4 +83,24 @@ function sumNumber(num1, num2) {
 const res = sumNumber(5,4)
 console.log(res);
 
+const demoUserOne = {
+    name : "robo",
+    age : 125,
+    founder : "Tony",
+
+}
+
+const demoUserTwo = {
+    name : "mecha",
+    age : 185,
+    founder : "doom",
+
+}
+
+const demoUser = {...demoUserOne,...demoUserTwo}
+
+console.log(demoUser); // object
+
+console.log(Object.keys(demoUser)); // Array
+
 
