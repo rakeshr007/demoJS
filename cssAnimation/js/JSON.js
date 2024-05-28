@@ -76,8 +76,11 @@ const user ={
 
 //=====================Global And local  Scopes ====================
 
-function name(params) {
-    
+function sumNumber(num1, num2) {
+    return num1 + num2
 }
+
+const res = sumNumber(5,4)
+console.log(res);
 
 
