@@ -49,6 +49,7 @@ function loginUserMessage(username = "rajesh"){
 
 const user ={
     username : " hitesh",
+    age : 56,
     price : 100
 }
 
