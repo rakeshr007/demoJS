@@ -14,9 +14,39 @@ const user = {
 
 // console.log(this); // you get empty object
 
-function chai() {
+// function chai() {
+//     let username = "messi"
+//     //console.log(this.username); undefined
+    
+// }
 
-    console.log(this);
-}
+// chai()
 
-chai()
+// const chai = function (params) {
+//     let username = "messi"
+//     console.log(this.username)
+// }
+
+// chai() // undefined
+
+// ================== functions =================
+
+// const chai = () => {
+//     let username = "messi"
+//     console.log(this)
+// }
+
+// chai()
+
+//================ pure arrow function ========= 
+
+//const addTwo = (num1 , num2) => { return num1 + num2 } if using parenthensis then use return key word
+
+//const addTwo = (num1 , num2) => (num1 + num2)  // no need to write return keyword
+
+const addTwo = (num1 , num2) => ({username : " neymar"})
+// console.log(addTwo(3 , 4));
+
+// const myArray = [2,3,5,4,8,9]
+
+// myArray.forEach()
