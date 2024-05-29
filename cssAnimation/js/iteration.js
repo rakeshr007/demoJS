@@ -111,7 +111,7 @@ const myObject = {
     'game3' : 'Forza'
 }
 
-// for (const [key,value] of myObject) {
-//     console.log(key ,':-',Object); ====> it will not work
-// }
+for (const [key,value] of myObject) {
+    console.log(key ,':-',Object); // ====> it will not work
+}
 
