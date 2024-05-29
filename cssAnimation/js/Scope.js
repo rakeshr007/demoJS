@@ -53,3 +53,5 @@ const addTwo = function(num) { // expression it can hold any thing json file als
 }
 
 addTwo(5)
+
+console.log("Added to my Laptop");
