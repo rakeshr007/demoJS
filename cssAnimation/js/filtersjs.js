@@ -41,9 +41,24 @@ const shoppingCart = [
         itemName : "data science course",
         price: 12999
     },
+    {
+        itemName : "Meta course",
+        price: 9999
+    },
 
 ]
 
-const priceToPay = shoppingCart.reduce( (acc ,item) => acc + item.price, 0)
+    const priceToPay = shoppingCart.reduce( (acc ,item) => acc + item.price, 0)
 
-console.log("price you have to pay : ",priceToPay);
+    console.log("price you have to pay : ",priceToPay);
+
+    const payAgain = shoppingCart.reduce( (acc , item) => {
+        return acc + item.price
+    },0)
+
+
+    console.log("price you have to payAgain : ",payAgain);
+
+    const BookTotalCost = shoppingCart.reduce((acc, item) => acc + item.price ,0)
+
+    console.log("The total cost of the book is ", BookTotalCost);
