@@ -87,6 +87,7 @@ const demoUserOne = {
     name : "robo",
     age : 125,
     founder : "Tony",
+    price : 1568000,
 
 }
 
@@ -94,7 +95,7 @@ const demoUserTwo = {
     name : "mecha",
     age : 185,
     founder : "doom",
-
+    price : 1444545,
 }
 
 const demoUser = {...demoUserOne,...demoUserTwo}
@@ -102,5 +103,7 @@ const demoUser = {...demoUserOne,...demoUserTwo}
 console.log(demoUser); // object
 
 console.log(Object.keys(demoUser)); // Array
+console.log(Object.values(demoUserTwo));
+
 
 
