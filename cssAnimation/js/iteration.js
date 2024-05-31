@@ -431,12 +431,18 @@ const books = [
 
   
   let userBooks = books.filter((bk)=>
-    bk.genre === 'Romance'
+    bk.genre === 'Dystopian'
   )
 
-  userBooks = books.filter( (bk) => {
-   return bk.year >= 1800 && bk.genre === "Romance"
-}) 
+//   userBooks = books.filter( (bk) => {
+//    return bk.year >= 1800 && bk.genre === "Romance"
+// }) 
+
+  console.log(userBooks);
+
+  userBooks = books.filter((bk) => {
+    return bk.year >= 1840 && bk.genre === "Romance"
+  })
 
   console.log(userBooks);
 
