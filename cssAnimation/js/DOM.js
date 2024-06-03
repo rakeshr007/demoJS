@@ -101,7 +101,7 @@ addOptiLanguage('Procedural')
 
 //====================== Edit Element ===============
 
-const secondLang = document.querySelector('li:nth-child(2)')
+const secondLang = document.querySelector('li:nth-child(3)')
 //secondLang.innerHTML = "MongoDB"
 const newli = document.createElement('li')
 newli.textContent = "MongoDB_Atlas"
@@ -156,3 +156,46 @@ function addcomputer (comp) {
 addcomputer("Redon")
 // addcomputer("pentagon")
 
+
+function addMoviesName(movie) {
+    const newMovies = document.createElement('li')
+    newMovies.appendChild(document.createTextNode(movie))
+    document.querySelector('.Movies').appendChild(newMovies)
+}
+
+addMoviesName("DC")
+addMoviesName("HarryPotter")
+addMoviesName("superman")
+addMoviesName("batman")
+//==============Edit =1====================
+
+// const secondLang = document.querySelector('li:nth-child(3)')
+// secondLang.innerHTML = "MongoDB"
+// const newli = document.createElement('li')
+// newli.textContent = "MongoDB_Atlas"
+// secondLang.replaceWith(newli)
+
+const editName = document.querySelector('.Movies li:nth-child(2)')
+const newLine = document.createElement('li')
+newLine.textContent = "AwT"
+editName.replaceWith(newLine)
+
+function EditMovies(position , movies) {
+    const editMovies = document.querySelector(`.Movies li:nth-child(${position})`)
+    const newLine  = document.createElement('li')
+    newLine.textContent = movies ;
+    editMovies.replaceWith(newLine);
+
+}
+
+EditMovies(3 ,"newMovie")
+
+// const lastMovie = document.querySelector('.Movies li:nth-child(1)')
+// lastMovie.remove()
+
+function deleteMovies(position) {
+        const lastMovie = document.querySelector(`.Movies li:nth-child(${position})`)
+        lastMovie.remove()
+}
+
+deleteMovies(1) 
