@@ -1,0 +1,49 @@
+body {
+    margin: 8px;
+    padding: 24px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    border: solid 2px black;
+    padding: 8px 16px;
+    margin: 8px;
+    text-decoration: none;
+    font-size:20px;
+    border-radius: 5px;
+}
+.heading{
+    text-align: center;
+}
+
+.button_color{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button{
+    border: solid 2px black;
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px;
+    
+}
+
+#grey{
+    background-color: grey;
+}
+#white{
+    background-color: white;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
